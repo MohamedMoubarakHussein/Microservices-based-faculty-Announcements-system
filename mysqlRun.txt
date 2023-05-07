@@ -1,0 +1,42 @@
+
+docker build -t mysql-image .
+
+#-t define the tag or the name of the image
+
+docker run --name mysql-container -p 3306:3306 -d mysql-image
+/*
+run to start a new continer
+
+--name set the name of the container 
+
+-p map the port in the continer to the host to allow access from host machine
+
+-d run in background in datedch mode 
+*/
+
+
+docker exec -it mysql-container bash
+
+
+
+/*
+ exec to execute command in docker
+ -it start an interactive termainal season
+*/
+
+
+mysql -h localhost -u root -p
+
+
+/*
+to connect to the mysql shall
+
+-h chose the host name 
+
+-u  choose the user name
+
+-p to enter the password
+*/
+
+
+
