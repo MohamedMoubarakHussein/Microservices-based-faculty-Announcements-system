@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "d8521514-5b5c-4628-9cd1-f48b18dc671d",
+		"name": "Announcementer -- producer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PUBLISH Announcement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"PUBLISH\",\r\n    \"announcementTitle\" :\"This is the title of this announcement\",\r\n    \"announcement\":\"There are delay for the lecture in H4\",\r\n    \"localDate\":\"5/7/2023\",\r\n    \"levels\":[\"1\",\"4\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/publishAnnouncement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"publishAnnouncement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Announcement",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1 ,\r\n    \"type\":\"DELETED\",\r\n    \"announcementTitle\" :\"This is the title of this announcement\",\r\n    \"announcement\":\"There are delay for the lecture in H4\",\r\n    \"localDate\":\"5/7/2023\",\r\n    \"levels\":[\"1\",\"4\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/deleteAnnouncement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deleteAnnouncement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Announcement",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1 ,\r\n    \"type\":\"UPDATE\",\r\n    \"announcementTitle\" :\"This is the title of this announcement\",\r\n    \"announcement\":\"There are delay for the lecture in H4\",\r\n    \"localDate\":\"5/7/2023\",\r\n    \"levels\":[\"1\",\"4\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/updateAnnouncement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"updateAnnouncement"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

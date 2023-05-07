@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "cfd8dc65-8a1c-46cc-9309-5e051dd9a80a",
+		"name": "Student -- consumer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all anouncement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/announcements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"announcements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get announcement by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/announcement/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"announcement",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete announcement form consumer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/announcementdel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"announcementdel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
